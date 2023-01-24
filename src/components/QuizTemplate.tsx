@@ -1,20 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SelectQuiz from "./SelectQuiz";
 
-import agileQuiz from "../data/agile-quiz";
-import cssQuiz from "../data/css-quiz";
-import freecodecampQuiz from "../data/freecodecamp-quiz";
-import generalCSQuiz from "../data/general-cs-quiz";
-import gitQuiz from "../data/git-quiz";
-import htmlQuiz from "../data/html-quiz";
-import informationTechnologyQuiz from "../data/information-technology-quiz";
-import javascriptQuiz from "../data/javascript-quiz";
-import linuxQuiz from "../data/linux-quiz";
-import pythonQuiz from "../data/python-quiz";
-import qualityAssuranceQuiz from "../data/quality-assurance-quiz";
-import securityQuiz from "../data/security-quiz";
-import sqlQuiz from "../data/sql-quiz";
-
+import { ALL_CATEGORIES, CATEGORY_NAMES } from "../constants";
 import Results from "./Results";
 import shuffle from "../shuffle-arr";
 import Button from "./Button";
@@ -23,30 +10,15 @@ import Questions from "./Questions";
 import "../stylesheets/App.css";
 import {
   correctModalResponses,
-  incorrectModalResponses,
+  incorrectModalResponses
 } from "../data/modal-responses";
 
 interface QuizProps {
   home: React.MouseEventHandler;
 }
 
-const QuizTemplate: React.FC<QuizProps> = (QuizProps) => {
-  const allCategories = [
-    ...cssQuiz,
-    ...freecodecampQuiz,
-    ...generalCSQuiz,
-    ...gitQuiz,
-    ...htmlQuiz,
-    ...informationTechnologyQuiz,
-    ...javascriptQuiz,
-    ...linuxQuiz,
-    ...pythonQuiz,
-    ...sqlQuiz,
-    ...agileQuiz,
-    ...qualityAssuranceQuiz,
-    ...securityQuiz,
-  ];
-  const [quiz, setQuiz] = useState(allCategories);
+const QuizTemplate: React.FC<QuizProps> = QuizProps => {
+  const [quiz, setQuiz] = useState(ALL_CATEGORIES);
   const [questionNumber, setQuestionNumber] = useState(1);
   const [isResults, setIsResults] = useState(false);
   const [points, setPoints] = useState(0);
@@ -57,6 +29,27 @@ const QuizTemplate: React.FC<QuizProps> = (QuizProps) => {
   const [chooseAnswer, setChooseAnswer] = useState(false);
   const [show, setShow] = useState(false);
   const [showOptions, setShowOptions] = useState(true);
+  // Category Questions
+  const [questionCategories, setQuestionCategories] = useState({
+    accessibilityQuestionsCorrect: 0,
+    agileQuestionsCorrect: 0,
+    cloudComputingQuestionsCorrect: 0,
+    cssQuestionsCorrect: 0,
+    devOpsQuestionsCorrect: 0,
+    freeCodeCampQuestionsCorrect: 0,
+    generalCSQuestionsCorrect: 0,
+    gitQuestionsCorrect: 0,
+    htmlQuestionsCorrect: 0,
+    infoTechQuestionsCorrect: 0,
+    javascriptQuestionsCorrect: 0,
+    linuxQuestionsCorrect: 0,
+    pythonQuestionsCorrect: 0,
+    securityQuestionsCorrect: 0,
+    sqlQuestionsCorrect: 0,
+    qualityAssuranceQuestionsCorrect: 0,
+    regexQuestionsCorrect: 0
+  });
+
   const selectQuizArr = [10, 25, 50, 100, quiz.length];
   const choicesArr: string[][] = [];
   const currQuestion = quiz[questionNumber - 1];
@@ -89,7 +82,7 @@ const QuizTemplate: React.FC<QuizProps> = (QuizProps) => {
   const handleShow = () => setShow(true);
 
   //shuffle the right and wrong answers
-  quiz.forEach((obj) => {
+  quiz.forEach(obj => {
     const arr = [obj.Answer, obj.Distractor1, obj.Distractor2, obj.Distractor3];
     choicesArr.push(shuffle<string>(arr));
   });
@@ -99,23 +92,111 @@ const QuizTemplate: React.FC<QuizProps> = (QuizProps) => {
       setIsResults(true);
       return;
     }
-    setQuestionNumber((curr) => curr + 1);
+    setQuestionNumber(curr => curr + 1);
     setChooseAnswer(false);
   };
 
   const resetQuiz = () => {
-    setQuiz(allCategories);
+    setQuiz(ALL_CATEGORIES);
     setIsResults(false);
     setShow(false);
     setShowOptions(true);
     setChooseAnswer(false);
     setPoints(0);
     setQuestionNumber(1);
+    resetCategoryPoints();
+  };
+
+  const hideResultsBreakdown = () => {
+    setShow(false);
+  };
+
+  const resetCategoryPoints = () => {
+    setQuestionCategories({
+      accessibilityQuestionsCorrect: 0,
+      agileQuestionsCorrect: 0,
+      cloudComputingQuestionsCorrect: 0,
+      cssQuestionsCorrect: 0,
+      devOpsQuestionsCorrect: 0,
+      freeCodeCampQuestionsCorrect: 0,
+      generalCSQuestionsCorrect: 0,
+      gitQuestionsCorrect: 0,
+      htmlQuestionsCorrect: 0,
+      infoTechQuestionsCorrect: 0,
+      javascriptQuestionsCorrect: 0,
+      linuxQuestionsCorrect: 0,
+      pythonQuestionsCorrect: 0,
+      securityQuestionsCorrect: 0,
+      sqlQuestionsCorrect: 0,
+      qualityAssuranceQuestionsCorrect: 0,
+      regexQuestionsCorrect: 0
+    });
   };
 
   const shuffleModalResponses = (responses: string[]) => {
     const shuffleModalArr = shuffle<string>(responses);
     return shuffleModalArr[0];
+  };
+
+  const incrementCategoryQuestionScore = (categoryName: string) => {
+    const copy = Object.assign({}, questionCategories);
+    if (categoryName == CATEGORY_NAMES.AGILE) {
+      const agileScore = questionCategories.agileQuestionsCorrect + 1;
+      copy.agileQuestionsCorrect = agileScore;
+    } else if (categoryName == CATEGORY_NAMES.ACCESSIBILITY) {
+      const accessibilityScore =
+        questionCategories.accessibilityQuestionsCorrect + 1;
+      copy.accessibilityQuestionsCorrect = accessibilityScore;
+    } else if (categoryName == CATEGORY_NAMES.CLOUDCOMPUTING) {
+      const cloudComputingScore =
+        questionCategories.cloudComputingQuestionsCorrect + 1;
+      copy.cloudComputingQuestionsCorrect = cloudComputingScore;
+    } else if (categoryName == CATEGORY_NAMES.CSS) {
+      const cssScore = questionCategories.cssQuestionsCorrect + 1;
+      copy.cssQuestionsCorrect = cssScore;
+    } else if (categoryName == CATEGORY_NAMES.DEVOPS) {
+      const devopsScore = questionCategories.devOpsQuestionsCorrect + 1;
+      copy.devOpsQuestionsCorrect = devopsScore;
+    } else if (categoryName == CATEGORY_NAMES.FREECODECAMP) {
+      const freeCodeCampScore =
+        questionCategories.freeCodeCampQuestionsCorrect + 1;
+      copy.freeCodeCampQuestionsCorrect = freeCodeCampScore;
+    } else if (categoryName == CATEGORY_NAMES.GENERAL) {
+      const generalScore = questionCategories.generalCSQuestionsCorrect + 1;
+      copy.generalCSQuestionsCorrect = generalScore;
+    } else if (categoryName == CATEGORY_NAMES.GIT) {
+      const gitScore = questionCategories.gitQuestionsCorrect + 1;
+      copy.gitQuestionsCorrect = gitScore;
+    } else if (categoryName == CATEGORY_NAMES.HTML) {
+      const htmlScore = questionCategories.htmlQuestionsCorrect + 1;
+      copy.htmlQuestionsCorrect = htmlScore;
+    } else if (categoryName == CATEGORY_NAMES.INFOTECH) {
+      const infoTechScore = questionCategories.infoTechQuestionsCorrect + 1;
+      copy.infoTechQuestionsCorrect = infoTechScore;
+    } else if (categoryName == CATEGORY_NAMES.JAVASCRIPT) {
+      const javaScriptScore = questionCategories.javascriptQuestionsCorrect + 1;
+      copy.javascriptQuestionsCorrect = javaScriptScore;
+    } else if (categoryName == CATEGORY_NAMES.LINUX) {
+      const linuxScore = questionCategories.linuxQuestionsCorrect + 1;
+      copy.linuxQuestionsCorrect = linuxScore;
+    } else if (categoryName == CATEGORY_NAMES.PYTHON) {
+      const pythonScore = questionCategories.pythonQuestionsCorrect + 1;
+      copy.pythonQuestionsCorrect = pythonScore;
+    } else if (categoryName == CATEGORY_NAMES.QUALITYASSURANCE) {
+      const qualityAssuranceScore =
+        questionCategories.qualityAssuranceQuestionsCorrect + 1;
+      copy.qualityAssuranceQuestionsCorrect = qualityAssuranceScore;
+    } else if (categoryName == CATEGORY_NAMES.REGEX) {
+      const regexScore = questionCategories.regexQuestionsCorrect + 1;
+      copy.regexQuestionsCorrect = regexScore;
+    } else if (categoryName == CATEGORY_NAMES.SECURITY) {
+      const securityScore = questionCategories.securityQuestionsCorrect + 1;
+      copy.securityQuestionsCorrect = securityScore;
+    } else if (categoryName == CATEGORY_NAMES.SQL) {
+      const sqlScore = questionCategories.sqlQuestionsCorrect + 1;
+      copy.sqlQuestionsCorrect = sqlScore;
+    }
+    setQuestionCategories(copy);
   };
 
   const checkAnswer = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -128,7 +209,8 @@ const QuizTemplate: React.FC<QuizProps> = (QuizProps) => {
       setShowReference(currQuestion.Link);
       handleShow();
     } else {
-      setPoints((curr) => curr + 1);
+      incrementCategoryQuestionScore(currQuestion.Category);
+      setPoints(curr => curr + 1);
       setMessage(shuffleModalResponses(correctModalResponses));
       setDisplayExplanation(currQuestion.Explanation);
       setShowReference(currQuestion.Link);
@@ -138,7 +220,7 @@ const QuizTemplate: React.FC<QuizProps> = (QuizProps) => {
 
   const selectQuizProps = {
     startQuiz,
-    selectQuizArr,
+    selectQuizArr
   };
 
   const modalProps = {
@@ -148,13 +230,16 @@ const QuizTemplate: React.FC<QuizProps> = (QuizProps) => {
     displayExplanation,
     showReference,
     show,
-    nextQuestion,
+    nextQuestion
   };
 
   const resultsProps = {
     points,
     totalPoints,
     resetQuiz,
+    hideResultsBreakdown,
+    questionCategories,
+    show
   };
 
   const questionProps = {
@@ -165,7 +250,7 @@ const QuizTemplate: React.FC<QuizProps> = (QuizProps) => {
     chooseAnswer,
     points,
     choicesArr,
-    checkAnswer,
+    checkAnswer
   };
 
   return (

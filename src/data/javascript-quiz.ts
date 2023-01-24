@@ -1,6 +1,114 @@
 const javascriptQuiz = [
   {
     Question:
+      "In JavaScript, if let x='Prakhar', then what will be the result for console.log(x.substring(2,5))?",
+    Answer: "akh",
+    Distractor1: "akaha",
+    Distractor2: "aka",
+    Distractor3: "akkkaha",
+    Explanation:
+      "The first parameter in the substring method represents the starting index for the string while the second parameter represents the ending index.",
+    Link: "https://www.freecodecamp.org/news/javascript-substring-examples-slice-substr-and-substring-methods-in-js/"
+  },
+  {
+    Question:
+      "In JavaScript, what is the range of numbers returned from the Math.random() method?",
+    Answer: "Between 0 and 1 (including 0; not including 1).",
+    Distractor1: "Between 0 and 1 (including neither 0 or 1).",
+    Distractor2: "Between 0 and 1 (including 1; not including 0).",
+    Distractor3: "Between 0 and 100 (including 0; not including 100).",
+    Explanation:
+      "Math.random() returns a floating point (decimal) number that is less than one and greater than or equal to zero.",
+    Link: "https://www.freecodecamp.org/news/javascript-math-random-method-explained/"
+  },
+  {
+    Question:
+      "In JavaScript, what is the difference between the indexOf() and search() methods?",
+    Answer: "indexOf() can take a second parameter while search() cannot",
+    Distractor1: "Both methods are the same",
+    Distractor2: "indexOf() only takes regular expressions",
+    Distractor3: "The search() method runs 4x faster than the indexOf() method",
+    Explanation:
+      "One key difference between the indexOf() and search() methods is that indexOf() can take a second parameter while search() cannot.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf"
+  },
+  {
+    Question: "What does the 'debugger' statement in JavaScript do?",
+    Answer: "It acts as a breakpoint in a program",
+    Distractor1: "It will debug errors in the current statement",
+    Distractor2: "It will debug all the errors in the program at runtime",
+    Distractor3: "All of the above",
+    Explanation:
+      "The 'debugger' statement is used to setup the breakup points at probable points of errors in the code snippet, using the debugger window.",
+    Link: "https://www.freecodecamp.org/news/debugging-javascript-for-beginners-5d4ac15dd1cd/#"
+  },
+  {
+    Question: "What kind of programming can JavaScript be used for?",
+    Answer: "Both Client and Server side programming",
+    Distractor1: "Server side only",
+    Distractor2: "Client side only",
+    Distractor3: "None of these options",
+    Explanation:
+      "JavaScript is a programming language which can be used on the client and server side.",
+    Link: "https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction#are_server-side_and_client-side_programming_the_same"
+  },
+  {
+    Question:
+      "In JavaScript, if let x='5', then what will be the value of console.log(x==5,x===5)?",
+    Answer: "true false",
+    Distractor1: "true true",
+    Distractor2: "false true",
+    Distractor3: "false false",
+    Explanation:
+      "== compares only the value while === compares the value as well as the type.",
+    Link: "https://www.freecodecamp.org/news/javascript-triple-equals-sign-vs-double-equals-sign-comparison-operators-explained-with-examples/"
+  },
+  {
+    Question:
+      "In JavaScript, which Web API is used to display a dialog box with an optional message?",
+    Answer: "window.alert()",
+    Distractor1: "window.alertHTML()",
+    Distractor2: "window.alertContent()",
+    Distractor3: "window.alertBox()",
+    Explanation:
+      "In Javascript, the window.alert() method is used to display a dialog box with an optional message",
+    Link: "https://www.freecodecamp.org/news/how-to-build-a-javascript-alert-box-or-popup-window/"
+  },
+  {
+    Question:
+      "In JavaScript, if let word='Intelligent', then what will be the value of word.slice(2,5)?",
+    Answer: "tel",
+    Distractor1: "tellig",
+    Distractor2: "ll",
+    Distractor3: "Inigent",
+    Explanation:
+      "The slice() method returns a substring of the original string. The original string remains untouched.",
+    Link: "https://www.freecodecamp.org/news/javascript-substring-examples-slice-substr-and-substring-methods-in-js/"
+  },
+  {
+    Question:
+      "In Javascript, what keyword is used to check whether a given property in an object is valid?",
+    Answer: "in",
+    Distractor1: "is in",
+    Distractor2: "exists",
+    Distractor3: "lies",
+    Explanation:
+      "The in keyword is used to check whether the given property in an object is valid or not.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in"
+  },
+  {
+    Question:
+      "In JavaScript, which method uses a callback function for each element in the array?",
+    Answer: "forEach()",
+    Distractor1: "every(",
+    Distractor2: "forEvery()",
+    Distractor3: "each()",
+    Explanation:
+      "The forEach() method uses a callback function for each element in the array.",
+    Link: "https://www.freecodecamp.org/news/javascript-foreach-how-to-loop-through-an-array-in-js/"
+  },
+  {
+    Question:
       "Which of the following JavaScript array methods would run the slowest in a worst-case scenario?",
     Answer: "shift()",
     Distractor1: "pop()",
@@ -8,7 +116,29 @@ const javascriptQuiz = [
     Distractor3: "All take about the same time on an array of the same size.",
     Explanation:
       "shift() removes elements from the front of the array, which means the entire array needs to be re-indexed. In contrast, pop() and push() both work from the 'back' of the array and don't require re-indexing.",
-    Link: "https://www.freecodecamp.org/news/the-complexity-of-simple-algorithms-and-data-structures-in-javascript-11e25b29de1e/",
+    Link: "https://www.freecodecamp.org/news/the-complexity-of-simple-algorithms-and-data-structures-in-javascript-11e25b29de1e/"
+  },
+  {
+    Question:
+      "In JavaScript, if let n = 12345.6789, then what will be the result for console.log(n.toFixed())?",
+    Answer: "12346",
+    Distractor1: "12345",
+    Distractor2: "12345.6789",
+    Distractor3: "Undefined. toFixed() must take parameters",
+    Explanation:
+      "Parameters are optional. If not passed, it will round the given number, leaving with no fractional part",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed#examples"
+  },
+  {
+    Question:
+      "In JavaScript, what will be the value for console.log(((a, b = 1, c) => {}).length)?",
+    Answer: "1",
+    Distractor1: "3",
+    Distractor2: "2",
+    Distractor3: "0",
+    Explanation:
+      "length property inside the function indicates the expected number of parameters. But, only paramaters before the first one with a default value are counted.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length"
   },
   {
     Question:
@@ -19,7 +149,17 @@ const javascriptQuiz = [
     Distractor3: "Change Value",
     Explanation:
       "Type coercion is the process of converting a value from one type to another (such as a string to number, object to boolean, and so on).",
-    Link: "https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/",
+    Link: "https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/"
+  },
+  {
+    Question: "Which web API method cancels an event's default behavior?",
+    Answer: "preventDefault()",
+    Distractor1: "cancel()",
+    Distractor2: "preVent()",
+    Distractor3: "stop()",
+    Explanation:
+      "The preventDefault() method cancels the event and prevents the browser from running its default action.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"
   },
   {
     Question:
@@ -30,7 +170,7 @@ const javascriptQuiz = [
     Distractor3: "eventWake()",
     Explanation:
       "The JavaScript addEventListener() method allows you to set up functions to be called when a specified event happens, such as when a user clicks a button.",
-    Link: "https://www.youtube.com/watch?v=jS4aFq5-91M&t=17471s",
+    Link: "https://www.youtube.com/watch?v=jS4aFq5-91M&t=17471s"
   },
   {
     Question:
@@ -41,7 +181,7 @@ const javascriptQuiz = [
     Distractor3: "lookupPrefix()",
     Explanation:
       "The insertBefore() method inserts a new child node anywhere under the parent node. This method has two parameters: newNode and referenceNode",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore"
   },
   {
     Question:
@@ -52,7 +192,7 @@ const javascriptQuiz = [
     Distractor3: "setHTML",
     Explanation:
       "The innerHTML is a property of the element that allows you to get or set the HTML markup contained within the element.",
-    Link: "https://youtu.be/jS4aFq5-91M?t=18781",
+    Link: "https://youtu.be/jS4aFq5-91M?t=18781"
   },
   {
     Question:
@@ -63,17 +203,7 @@ const javascriptQuiz = [
     Distractor3: "Scope Chaining",
     Explanation:
       "Closures are special types of functions where the inner function will have access to variables in the outer function's scope.",
-    Link: "https://www.freecodecamp.org/news/a-basic-guide-to-closures-in-javascript-9fc8b7e3463e",
-  },
-  {
-    Question: "Which of the following scoping types does JavaScript use?",
-    Answer: "Lexical",
-    Distractor1: "Sequential",
-    Distractor2: "Segmental",
-    Distractor3: "Literal",
-    Explanation:
-      "JavaScript, like most current programming languages, employs lexical scoping. This means that functions are performed with the variable scope in effect when they were defined, rather than the variable scope in effect when they are invoked.",
-    Link: "https://www.freecodecamp.org/news/scope-and-closures-in-javascript",
+    Link: "https://www.freecodecamp.org/news/a-basic-guide-to-closures-in-javascript-9fc8b7e3463e"
   },
   {
     Question:
@@ -84,7 +214,7 @@ const javascriptQuiz = [
     Distractor3: "a sum",
     Explanation:
       "The unary plus operator (+) attempts to convert its operand to a number.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus"
   },
   {
     Question:
@@ -95,7 +225,7 @@ const javascriptQuiz = [
     Distractor3: ".entries()",
     Explanation:
       "The Element.getBoundingClientRect() method returns a DOMRect object providing information about the size of an element and its position relative to the viewport.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect"
   },
   {
     Question:
@@ -106,7 +236,7 @@ const javascriptQuiz = [
     Distractor3: ".slice()",
     Explanation:
       "The .trim() method removes white space (including space, tab, etc.) from both ends of a string and returns a new string without modifying the original.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim"
   },
   {
     Question:
@@ -117,7 +247,7 @@ const javascriptQuiz = [
     Distractor3: "filter()",
     Explanation:
       "The Set object lets you store unique values of any type, whether primitive values or object references. Set removes duplicate entries.",
-    Link: "https://www.freecodecamp.org/news/lets-learn-about-set-and-its-unique-functionality-in-javascript-5654c5c03de2/",
+    Link: "https://www.freecodecamp.org/news/lets-learn-about-set-and-its-unique-functionality-in-javascript-5654c5c03de2/"
   },
   {
     Question:
@@ -128,7 +258,7 @@ const javascriptQuiz = [
     Distractor3: "accessor",
     Explanation:
       "Prototypes provide the means for JavaScript objects to inherit features from other objects.",
-    Link: "https://www.freecodecamp.org/news/javascript-prototype-explained-with-examples/",
+    Link: "https://www.freecodecamp.org/news/javascript-prototype-explained-with-examples/"
   },
   {
     Question:
@@ -139,7 +269,7 @@ const javascriptQuiz = [
     Distractor3: "apply",
     Explanation:
       "Assigning 0 to the length property of the array will clear the contents of the array.",
-    Link: "https://www.freecodecamp.org/news/how-javascript-implements-oop/",
+    Link: "https://www.freecodecamp.org/news/how-javascript-implements-oop/"
   },
   {
     Question:
@@ -150,18 +280,18 @@ const javascriptQuiz = [
     Distractor3: "var",
     Explanation:
       "The value of a const variable must be specified when the variable is declared.",
-    Link: "https://www.freecodecamp.org/news/let-me-be-a-const-ant-not-a-var-iable-1be52d153462/",
+    Link: "https://www.freecodecamp.org/news/let-me-be-a-const-ant-not-a-var-iable-1be52d153462/"
   },
   {
     Question:
-      "In JavaScript, given the array, 'let array = [0, 1, 2, 3]', what is a valid way to clear all of the the array's values?",
+      "In JavaScript, given the array, 'let array = [0, 1, 2, 3]', what is a valid way to clear all of the array's values?",
     Answer: "array.length = 0",
     Distractor1: "array.none()",
     Distractor2: "array.concat()",
     Distractor3: "array.push()",
     Explanation:
       "Assigning 0 to the length property of the array will clear the contents of the array.",
-    Link: "https://www.freecodecamp.org/news/check-if-javascript-array-is-empty-or-not-with-length/",
+    Link: "https://www.freecodecamp.org/news/check-if-javascript-array-is-empty-or-not-with-length/"
   },
   {
     Question:
@@ -172,7 +302,7 @@ const javascriptQuiz = [
     Distractor3: "pending",
     Explanation:
       "A variable that has not been assigned a value is of type undefined",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined"
   },
   {
     Question:
@@ -182,7 +312,7 @@ const javascriptQuiz = [
     Distractor2: "empty",
     Distractor3: "unreturned",
     Explanation: "In JavaScript, null represents the absence of a value.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null"
   },
   {
     Question:
@@ -193,7 +323,7 @@ const javascriptQuiz = [
     Distractor3: "initial",
     Explanation:
       "JavaScript arrays are zero-indexed. The first element of an array is located at index 0.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
   },
   {
     Question:
@@ -204,7 +334,7 @@ const javascriptQuiz = [
     Distractor3: "alert",
     Explanation:
       "A default clause is executed if the value of expression doesn't match any of the case clauses.",
-    Link: "https://www.freecodecamp.org/news/javascript-switch-case-js-switch-statement-example/",
+    Link: "https://www.freecodecamp.org/news/javascript-switch-case-js-switch-statement-example/"
   },
   {
     Question:
@@ -215,7 +345,7 @@ const javascriptQuiz = [
     Distractor3: "<=",
     Explanation:
       "The strict equality operator returns true if two values have the same type and the same value. If the two compared values have different types, the result is false.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality"
   },
   {
     Question:
@@ -226,7 +356,7 @@ const javascriptQuiz = [
     Distractor3: "let variable = function(){//code block}",
     Explanation:
       "ES6 arrow functions provide you with an alternative way to write shorter syntax compared to the traditional function expression.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
   },
   {
     Question:
@@ -237,7 +367,7 @@ const javascriptQuiz = [
     Distractor3: "Syntax error",
     Explanation:
       "The nullish coalescing operator in JavaScript will return the right-hand side operand if the left-hand side operand is null or undefined.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator"
   },
   {
     Question:
@@ -248,7 +378,7 @@ const javascriptQuiz = [
     Distractor3: "document",
     Explanation:
       "In the global execution context, the 'this' keyword always points to the window object",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this"
   },
   {
     Question: "In JavaScript, which queue is emptied first by an event loop?",
@@ -258,7 +388,7 @@ const javascriptQuiz = [
     Distractor3: "Both",
     Explanation:
       "An event loop first empties the Microtask queue and once it is empty it starts to empty the Callback queue.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop"
   },
   {
     Question:
@@ -269,7 +399,7 @@ const javascriptQuiz = [
     Distractor3: "class",
     Explanation:
       "var is hoisted with the default value of undefined while let, const and classes are hoisted but are in the Temporal Dead Zone(TDZ) until the declaration is executed.",
-    Link: "https://developer.mozilla.org/en-US/docs/Glossary/Hoisting",
+    Link: "https://developer.mozilla.org/en-US/docs/Glossary/Hoisting"
   },
   {
     Question:
@@ -280,7 +410,7 @@ const javascriptQuiz = [
     Distractor3: "null > 0",
     Explanation:
       "null >= 0 and null <= 0 will both result in true because these operators will convert null to 0. With the == operator, null only equals undefined.",
-    Link: "https://262.ecma-international.org/5.1/#sec-11.8.5",
+    Link: "https://262.ecma-international.org/5.1/#sec-11.8.5"
   },
   {
     Question:
@@ -291,7 +421,7 @@ const javascriptQuiz = [
     Distractor3: "let, var, const",
     Explanation:
       "console is part of a web API which is provided by browsers and Node.js.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/API/console",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/API/console"
   },
   {
     Question:
@@ -302,7 +432,7 @@ const javascriptQuiz = [
     Distractor3: "None of given",
     Explanation:
       "The bind function returns a new function with given arguments as the new function's 'this' keyword.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind"
   },
   {
     Question:
@@ -313,7 +443,7 @@ const javascriptQuiz = [
     Distractor3: "getFullYear()",
     Explanation:
       "The getDate() method returns the day of the month for the specified date according to local time. ",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate"
   },
 
   {
@@ -325,7 +455,7 @@ const javascriptQuiz = [
     Distractor3: "getFullYear()",
     Explanation:
       "The getDay() method returns the day of the week for the specified date according to local time, where 0 represents Sunday. ",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay"
   },
 
   {
@@ -337,7 +467,7 @@ const javascriptQuiz = [
     Distractor3: "getMyFullYearNow()",
     Explanation:
       "The getFullYear() method returns the year of the specified date according to local time. ",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear"
   },
 
   {
@@ -349,7 +479,7 @@ const javascriptQuiz = [
     Distractor3: "getHour()",
     Explanation:
       "The getHours() method returns the hour for the specified date, according to local time. ",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours"
   },
   {
     Question:
@@ -360,7 +490,7 @@ const javascriptQuiz = [
     Distractor3: "getMinutes()",
     Explanation:
       "The getMilliseconds() method returns the milliseconds in the specified date according to local time. ",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMilliseconds",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMilliseconds"
   },
   {
     Question:
@@ -371,7 +501,7 @@ const javascriptQuiz = [
     Distractor3: "getTheMinutes()",
     Explanation:
       "The getMinutes() method returns the minutes in the specified date according to local time. ",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes"
   },
   {
     Question:
@@ -382,7 +512,7 @@ const javascriptQuiz = [
     Distractor3: "getTime()",
     Explanation:
       "The getMonth() method returns the month in the specified date according to local time, as a zero-based value (where zero indicates the first month of the year). ",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth"
   },
   {
     Question:
@@ -393,7 +523,7 @@ const javascriptQuiz = [
     Distractor3: "getTime()",
     Explanation:
       "The getSeconds() method returns the seconds in the specified date according to local time. ",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds"
   },
   {
     Question:
@@ -404,7 +534,7 @@ const javascriptQuiz = [
     Distractor3: "getTheTime()",
     Explanation:
       "The getTime() method returns the number of milliseconds since the Unix Epoch. ",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime"
   },
   {
     Question:
@@ -415,7 +545,7 @@ const javascriptQuiz = [
     Distractor3: "getElementsByTagName()",
     Explanation:
       "The getElementsByClassName method returns an object containing all of the child elements with that given class name.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName"
   },
   {
     Question: "In JavaScript, which operator is used to concatenate strings?",
@@ -425,7 +555,17 @@ const javascriptQuiz = [
     Distractor3: "#",
     Explanation:
       "The addition operator (+) produces the sum of numeric operands or string concatenation.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition"
+  },
+  {
+    Question: "What are the two basic groups of data types in JavaScript?",
+    Answer: "Primitive and Reference types",
+    Distractor1: "Enumerated and Object types",
+    Distractor2: "Primitive and Floating types",
+    Distractor3: "Character and Number types",
+    Explanation:
+      "Primitive and Reference types are the two basic groups of data types in JavaScript.",
+    Link: "https://www.freecodecamp.org/news/primitive-vs-reference-data-types-in-javascript"
   },
   {
     Question:
@@ -436,7 +576,7 @@ const javascriptQuiz = [
     Distractor3: "from()",
     Explanation:
       "The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"
   },
   {
     Question:
@@ -447,7 +587,7 @@ const javascriptQuiz = [
     Distractor3: "join()",
     Explanation:
       "The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse"
   },
   {
     Question:
@@ -458,7 +598,7 @@ const javascriptQuiz = [
     Distractor3: "charAt(0)",
     Explanation:
       "The indexOf() method returns the first index of the specified value in a string and will return -1 if it is not present.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf"
   },
   {
     Question:
@@ -469,7 +609,7 @@ const javascriptQuiz = [
     Distractor3: "full-stop ('.')",
     Explanation:
       "If a separator is omitted, the array elements are separated with a comma (',').",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join"
   },
   {
     Question:
@@ -480,7 +620,7 @@ const javascriptQuiz = [
     Distractor3: "forEach()",
     Explanation:
       "The reduce() method iterates over the entire array and returns the value that results from running the “reducer” callback function to completion. The returned result is a single value.",
-    Link: "https://www.freecodecamp.org/news/the-ultimate-guide-to-javascript-array-methods-reduce/",
+    Link: "https://www.freecodecamp.org/news/the-ultimate-guide-to-javascript-array-methods-reduce/"
   },
   {
     Question:
@@ -491,7 +631,7 @@ const javascriptQuiz = [
     Distractor3: "flat()",
     Explanation:
       "The filter() method creates a new array and returns all of the items which pass the condition specified in the callback.",
-    Link: "https://www.freecodecamp.org/news/javascript-array-filter-tutorial-how-to-iterate-through-elements-in-an-array/",
+    Link: "https://www.freecodecamp.org/news/javascript-array-filter-tutorial-how-to-iterate-through-elements-in-an-array/"
   },
   {
     Question:
@@ -502,7 +642,7 @@ const javascriptQuiz = [
     Distractor3: "concat()",
     Explanation:
       "The map() method creates a new array filled with the results of calling a function (provided within the method) on every element in the array that calls the method.",
-    Link: "https://www.freecodecamp.org/news/array-map-tutorial/",
+    Link: "https://www.freecodecamp.org/news/array-map-tutorial/"
   },
   {
     Question: "What kind of function accepts another function as an argument?",
@@ -512,7 +652,7 @@ const javascriptQuiz = [
     Distractor3: "Named function",
     Explanation:
       "A Higher Order Function is any function that returns a function when executed, takes a function as one or more of its arguments, or both.",
-    Link: "https://www.freecodecamp.org/news/higher-order-functions-in-javascript-d9101f9cf528/",
+    Link: "https://www.freecodecamp.org/news/higher-order-functions-in-javascript-d9101f9cf528/"
   },
   {
     Question:
@@ -523,7 +663,7 @@ const javascriptQuiz = [
     Distractor3: "Angle brackets: <>",
     Explanation:
       "Template literals are literals delimited with backticks (`), allowing embedded expressions called substitutions. Untagged template literals result in strings, which makes them useful for string interpolation (and multiline strings, since unescaped newlines are allowed).",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals"
   },
   {
     Question:
@@ -534,7 +674,7 @@ const javascriptQuiz = [
     Distractor3: "concat()",
     Explanation:
       "The split() method divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split"
   },
   {
     Question:
@@ -545,7 +685,7 @@ const javascriptQuiz = [
     Distractor3: ".unshift()",
     Explanation:
       "The .shift() method removes the first element of an array and returns it. ",
-    Link: "https://www.freecodecamp.org/news/the-javascript-array-handbook/",
+    Link: "https://www.freecodecamp.org/news/the-javascript-array-handbook/"
   },
   {
     Question: "In JavaScript, what is the value of x ? let x = undefined || 1;",
@@ -555,7 +695,7 @@ const javascriptQuiz = [
     Distractor3: "null",
     Explanation:
       "The value of x is 1 because undefined is a falsy value and that's why 1 is assigned to the variable x.",
-    Link: "https://www.freecodecamp.org/news/javascript-logical-operators/",
+    Link: "https://www.freecodecamp.org/news/javascript-logical-operators/"
   },
   {
     Question: "In JavaScript, how do you create a promise inside a function?",
@@ -565,7 +705,7 @@ const javascriptQuiz = [
     Distractor3: "return Promise((reject, resolve))",
     Explanation:
       "You can use a promise inside a function with the following syntax: return new Promise((resolve, reject) => {})",
-    Link: "https://www.freecodecamp.org/news/javascript-promises-explained/",
+    Link: "https://www.freecodecamp.org/news/javascript-promises-explained/"
   },
   {
     Question:
@@ -576,7 +716,7 @@ const javascriptQuiz = [
     Distractor3: "if(A.equals(B))",
     Explanation:
       "The triple equals operator (===) will check for strict equality because it checks for the same data type and value.",
-    Link: "https://www.freecodecamp.org/news/javascript-promises-explained/",
+    Link: "https://www.freecodecamp.org/news/javascript-promises-explained/"
   },
   {
     Question:
@@ -586,7 +726,7 @@ const javascriptQuiz = [
     Distractor2: ".shift()",
     Distractor3: ".unshift()",
     Explanation: "The .push() method adds an element to the end of the array.",
-    Link: "https://www.freecodecamp.org/news/the-javascript-array-handbook/",
+    Link: "https://www.freecodecamp.org/news/the-javascript-array-handbook/"
   },
   {
     Question: "What does JSON stand for?",
@@ -596,7 +736,7 @@ const javascriptQuiz = [
     Distractor3: "Jargon Script Object Notation",
     Explanation:
       "JSON stands for JavaScript Object Notation which is a text-based format to store and exchange data.",
-    Link: "https://www.freecodecamp.org/news/what-is-json-a-json-file-example/",
+    Link: "https://www.freecodecamp.org/news/what-is-json-a-json-file-example/"
   },
   {
     Question:
@@ -607,7 +747,7 @@ const javascriptQuiz = [
     Distractor3: "typeof",
     Explanation:
       "Object destructuring is used to extract an object's values into new variables.",
-    Link: "https://www.freecodecamp.org/news/array-vs-object-destructuring-in-javascript/",
+    Link: "https://www.freecodecamp.org/news/array-vs-object-destructuring-in-javascript/"
   },
   {
     Question:
@@ -618,7 +758,7 @@ const javascriptQuiz = [
     Distractor3: ".join()",
     Explanation:
       "The .splice() method modifies an array in place and it can be used to remove or add elements to an array.",
-    Link: "https://www.freecodecamp.org/news/javascript-array-slice-vs-splice-whats-the-difference/",
+    Link: "https://www.freecodecamp.org/news/javascript-array-slice-vs-splice-whats-the-difference/"
   },
   {
     Question:
@@ -629,7 +769,7 @@ const javascriptQuiz = [
     Distractor3: "Makefile",
     Explanation:
       "Npm scripts allow command line tools to be called directly without relying on external plugins.",
-    Link: "https://www.freecodecamp.org/news/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8/",
+    Link: "https://www.freecodecamp.org/news/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8/"
   },
   {
     Question: "In JavaScript, how can you convert a string to an integer?",
@@ -639,7 +779,7 @@ const javascriptQuiz = [
     Distractor3: "parseSrt()",
     Explanation:
       "The parseInt() function converts the value passed as an argument to an integer.",
-    Link: "https://www.freecodecamp.org/news/convert-string-to-number-javascript/",
+    Link: "https://www.freecodecamp.org/news/convert-string-to-number-javascript/"
   },
   {
     Question: "In JavaScript, how do you write a multiline comment?",
@@ -648,7 +788,7 @@ const javascriptQuiz = [
     Distractor2: "<!-- -->",
     Distractor3: "** **",
     Explanation: "In JavaScript, we use /* */ to write a multiline comment.",
-    Link: "https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-comment-your-javascript-code/16783",
+    Link: "https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-comment-your-javascript-code/16783"
   },
   {
     Question: "In JavaScript, what is the logical AND operator?",
@@ -657,7 +797,7 @@ const javascriptQuiz = [
     Distractor2: "!",
     Distractor3: "**",
     Explanation: "&& is the logical AND operator in JavaScript.",
-    Link: "https://www.freecodecamp.org/news/javascript-logical-operators/",
+    Link: "https://www.freecodecamp.org/news/javascript-logical-operators/"
   },
   {
     Question:
@@ -668,7 +808,7 @@ const javascriptQuiz = [
     Distractor3: "for each",
     Explanation:
       "The sequence of statements in a do..while loop runs at least once because the condition is evaluated after running the statements. ",
-    Link: "https://www.freecodecamp.org/news/javascript-loops-explained-for-loop-for/",
+    Link: "https://www.freecodecamp.org/news/javascript-loops-explained-for-loop-for/"
   },
   {
     Question: "Which one is NOT a JavaScript library?",
@@ -678,7 +818,7 @@ const javascriptQuiz = [
     Distractor3: "Moment",
     Explanation:
       "There are many popular JavaScript libraries including React, D3 and Moment.",
-    Link: "https://www.freecodecamp.org/news/10-javascript-libraries-you-should-try/",
+    Link: "https://www.freecodecamp.org/news/10-javascript-libraries-you-should-try/"
   },
   {
     Question:
@@ -689,7 +829,7 @@ const javascriptQuiz = [
     Distractor3: ".textContent()",
     Explanation:
       "The document.createElement() method is used to add new elements to the DOM tree.",
-    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/",
+    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/"
   },
   {
     Question:
@@ -700,7 +840,7 @@ const javascriptQuiz = [
     Distractor3: "getContent",
     Explanation:
       "The textContent property is used to get the text content of a node in the DOM.",
-    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/",
+    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/"
   },
   {
     Question:
@@ -711,7 +851,7 @@ const javascriptQuiz = [
     Distractor3: "concat",
     Explanation:
       "The keyword const is used to define a constant in JavaScript. The value of a constant can't be changed through reassignment.",
-    Link: "https://www.freecodecamp.org/news/javascript-variables-beginners-guide/",
+    Link: "https://www.freecodecamp.org/news/javascript-variables-beginners-guide/"
   },
   {
     Question:
@@ -722,7 +862,7 @@ const javascriptQuiz = [
     Distractor3: "Optional chaining",
     Explanation:
       "Array destructuring is used  to extract array values into new variables.",
-    Link: "https://www.freecodecamp.org/news/array-vs-object-destructuring-in-javascript/",
+    Link: "https://www.freecodecamp.org/news/array-vs-object-destructuring-in-javascript/"
   },
   {
     Question:
@@ -733,7 +873,18 @@ const javascriptQuiz = [
     Distractor3: ".trim()",
     Explanation:
       "The .includes() method is used to check if one string is found in another.",
-    Link: "https://www.freecodecamp.org/news/javascript-string-contains-how-to-use-js-includes/",
+    Link: "https://www.freecodecamp.org/news/javascript-string-contains-how-to-use-js-includes/"
+  },
+  {
+    Question:
+      "In JavaScript, what is the name for variables that are accessible throughout the program?",
+    Answer: "Global variables",
+    Distractor1: "Const variables",
+    Distractor2: "Local variables",
+    Distractor3: "No variable is accessible throughout in JavaScript",
+    Explanation:
+      "Global variables are declared and made accessible throughout the entire JavaScript program.",
+    Link: "https://www.freecodecamp.org/news/global-variables-in-javascript-explained/"
   },
   {
     Question: "In JavaScript, what keyword is used to define a function?",
@@ -743,7 +894,7 @@ const javascriptQuiz = [
     Distractor3: "fct",
     Explanation:
       "The function keyword is used to define a function in JavaScript.",
-    Link: "https://www.freecodecamp.org/news/what-is-a-function-javascript-function-examples/",
+    Link: "https://www.freecodecamp.org/news/what-is-a-function-javascript-function-examples/"
   },
   {
     Question:
@@ -754,7 +905,7 @@ const javascriptQuiz = [
     Distractor3: ".sort()",
     Explanation:
       "The .slice() method extracts a portion of an array and returns a new array.",
-    Link: "https://www.freecodecamp.org/news/javascript-array-slice-vs-splice-whats-the-difference/",
+    Link: "https://www.freecodecamp.org/news/javascript-array-slice-vs-splice-whats-the-difference/"
   },
   {
     Question:
@@ -765,7 +916,7 @@ const javascriptQuiz = [
     Distractor3: ".getElementByTagName()",
     Explanation:
       "The .getElementById() method is used to select elements in the HTML document by referencing the id name.",
-    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/",
+    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/"
   },
   {
     Question: "In HTML, what are <script> tags?",
@@ -774,7 +925,7 @@ const javascriptQuiz = [
     Distractor2: "used to link SQL databases",
     Distractor3: "used to link noSQL databases",
     Explanation: "The script tag is used for client side JavaScript code.",
-    Link: "https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/",
+    Link: "https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/"
   },
   {
     Question:
@@ -785,8 +936,9 @@ const javascriptQuiz = [
     Distractor3: "!==",
     Explanation:
       "The == operator returns true if two values are equal and false if they are not equal. It converts the values to a common type before doing the comparison.",
-    Link: "https://www.freecodecamp.org/news/javascript-triple-equals-sign-vs-double-equals-sign-comparison-operators-explained-with-examples/",
+    Link: "https://www.freecodecamp.org/news/javascript-triple-equals-sign-vs-double-equals-sign-comparison-operators-explained-with-examples/"
   },
+
   {
     Question:
       "In JavaScript, what string method returns the character at the specified index?",
@@ -796,7 +948,7 @@ const javascriptQuiz = [
     Distractor3: ".character()",
     Explanation:
       "The .charAt() method returns the character at the specified index in JavaScript.",
-    Link: "https://devdocs.io/javascript/global_objects/string/charat",
+    Link: "https://devdocs.io/javascript/global_objects/string/charat"
   },
   {
     Question: "What is the main purpose of JavaScript in a website?",
@@ -806,7 +958,7 @@ const javascriptQuiz = [
     Distractor3: "Sound",
     Explanation:
       "JavaScript is used to create interactive and dynamic websites.",
-    Link: "https://www.freecodecamp.org/news/what-is-javascript-javascript-code-explained-in-plain-english/",
+    Link: "https://www.freecodecamp.org/news/what-is-javascript-javascript-code-explained-in-plain-english/"
   },
   {
     Question: "Are semicolons strictly required in JavaScript?",
@@ -816,7 +968,7 @@ const javascriptQuiz = [
     Distractor3: "only when using the split method",
     Explanation:
       "JavaScript does not require strict use of semicolons because it inserts them where they are needed through a process called Automatic Semicolon Insertion.",
-    Link: "https://www.freecodecamp.org/news/lets-talk-about-semicolons-in-javascript-f1fe08ab4e53/#:~:text=This%20is%20all%20possible%20because%20JavaScript%20does%20not%20strictly%20require%20semicolons.&text=It's%20important%20to%20know%20the,not%20behave%20like%20you%20expect.",
+    Link: "https://www.freecodecamp.org/news/lets-talk-about-semicolons-in-javascript-f1fe08ab4e53/#:~:text=This%20is%20all%20possible%20because%20JavaScript%20does%20not%20strictly%20require%20semicolons.&text=It's%20important%20to%20know%20the,not%20behave%20like%20you%20expect."
   },
   {
     Question:
@@ -827,7 +979,7 @@ const javascriptQuiz = [
     Distractor3: "0",
     Explanation:
       "The value undefined is returned by functions that do not have a return statement.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions"
   },
   {
     Question:
@@ -838,7 +990,7 @@ const javascriptQuiz = [
     Distractor3: "Multiplication Operator",
     Explanation:
       "The spread operator takes an array and spreads it into its individual elements. With this operator, we can pass the elements of an array as individual arguments to a function call.",
-    Link: "https://www.freecodecamp.org/news/javascript-rest-vs-spread-operators/",
+    Link: "https://www.freecodecamp.org/news/javascript-rest-vs-spread-operators/"
   },
   {
     Question:
@@ -849,18 +1001,18 @@ const javascriptQuiz = [
     Distractor3: ".unshift()",
     Explanation:
       "The .pop() method removes the last element of an array and returns it.",
-    Link: "https://www.freecodecamp.org/news/the-javascript-array-handbook/",
+    Link: "https://www.freecodecamp.org/news/the-javascript-array-handbook/"
   },
   {
     Question:
-      "In JavaScript, which one of these variable declarations can be redeclared within its scope?",
+      "In JavaScript, which one of these variable declarations can be re declared within its scope?",
     Answer: "var",
     Distractor1: "splice",
     Distractor2: "object.freeze",
     Distractor3: "concat",
     Explanation:
       "When you declare variables with var, they can be re-declared within their scope.",
-    Link: "https://www.freecodecamp.org/news/javascript-interview-prep-cheatsheet/",
+    Link: "https://www.freecodecamp.org/news/javascript-interview-prep-cheatsheet/"
   },
   {
     Question: "In JavaScript, how can you get the length of a string?",
@@ -870,7 +1022,7 @@ const javascriptQuiz = [
     Distractor3: ".size()",
     Explanation:
       "Strings have a .length property that contains their length (number of characters).",
-    Link: "https://devdocs.io/javascript/global_objects/string/length",
+    Link: "https://devdocs.io/javascript/global_objects/string/length"
   },
   {
     Question:
@@ -881,7 +1033,7 @@ const javascriptQuiz = [
     Distractor3: "lower",
     Explanation:
       "The toLowerCase method is used to convert all of the letters in a string to lowercase.",
-    Link: "https://www.freecodecamp.org/news/javascript-tolowercase-how-to-convert-a-string-to-lowercase-and-uppercase-in-js/",
+    Link: "https://www.freecodecamp.org/news/javascript-tolowercase-how-to-convert-a-string-to-lowercase-and-uppercase-in-js/"
   },
   {
     Question: "In JavaScript, what are the three types of scope?",
@@ -891,7 +1043,7 @@ const javascriptQuiz = [
     Distractor3: "const, function, block",
     Explanation:
       "The three types of scope in JavaScript are global, function and block.",
-    Link: "https://www.freecodecamp.org/news/javascript-interview-prep-cheatsheet/",
+    Link: "https://www.freecodecamp.org/news/javascript-interview-prep-cheatsheet/"
   },
   {
     Question:
@@ -902,7 +1054,7 @@ const javascriptQuiz = [
     Distractor3: ".getElementByTagName()",
     Explanation:
       "The .addEventListener() method is used to attach an event to an HTML element like a button.",
-    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/",
+    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/"
   },
   {
     Question:
@@ -913,7 +1065,7 @@ const javascriptQuiz = [
     Distractor3: "Multiplication Operator",
     Explanation:
       "The rest operator takes the individual arguments passed to a function and converts them into an array.",
-    Link: "https://www.freecodecamp.org/news/javascript-rest-vs-spread-operators/",
+    Link: "https://www.freecodecamp.org/news/javascript-rest-vs-spread-operators/"
   },
   {
     Question: "What is the DOM in JavaScript?",
@@ -925,7 +1077,7 @@ const javascriptQuiz = [
     Distractor3: "A function that is used as an argument for another function.",
     Explanation:
       "The DOM is a programming interface to create, change, or remove elements from the document.",
-    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/",
+    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/"
   },
   {
     Question:
@@ -936,7 +1088,7 @@ const javascriptQuiz = [
     Distractor3: "Function declaration",
     Explanation:
       "A callback function is a function that is passed as an argument to another function and then called inside the outer function.",
-    Link: "https://www.freecodecamp.org/news/javascript-callback-function-plain-english/",
+    Link: "https://www.freecodecamp.org/news/javascript-callback-function-plain-english/"
   },
   {
     Question:
@@ -947,7 +1099,7 @@ const javascriptQuiz = [
     Distractor3: ".join()",
     Explanation:
       "The .concat() method combines the text of two or more strings and returns a new string.",
-    Link: "https://devdocs.io/javascript/global_objects/string/concat",
+    Link: "https://devdocs.io/javascript/global_objects/string/concat"
   },
   {
     Question: "What is the filename extension of a JavaScript file?",
@@ -956,7 +1108,7 @@ const javascriptQuiz = [
     Distractor2: ".j",
     Distractor3: ".javascript",
     Explanation: "JavaScript files have a .js filename extension.",
-    Link: "https://en.wikipedia.org/wiki/JavaScript",
+    Link: "https://en.wikipedia.org/wiki/JavaScript"
   },
   {
     Question:
@@ -967,7 +1119,7 @@ const javascriptQuiz = [
     Distractor3: "await",
     Explanation:
       "The .querySelectorAll() method is used to find all of the elements that match the CSS selector and return a list of all of those nodes.",
-    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/",
+    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/"
   },
   {
     Question: "In JavaScript, what is the logical OR operator?",
@@ -976,7 +1128,7 @@ const javascriptQuiz = [
     Distractor2: "!",
     Distractor3: "**",
     Explanation: "|| is the logical OR operator in JavaScript.",
-    Link: "https://www.freecodecamp.org/news/javascript-logical-operators/",
+    Link: "https://www.freecodecamp.org/news/javascript-logical-operators/"
   },
   {
     Question:
@@ -987,7 +1139,17 @@ const javascriptQuiz = [
     Distractor3: "Netscape",
     Explanation:
       "When JavaScript first came out it was called Mocha, then later changed to LiveScript and finally settled on JavaScript.",
-    Link: "https://www.freecodecamp.org/news/what-is-javascript-javascript-code-explained-in-plain-english/",
+    Link: "https://www.freecodecamp.org/news/what-is-javascript-javascript-code-explained-in-plain-english/"
+  },
+  {
+    Question: "Which company created JavaScript?",
+    Answer: "Netscape",
+    Distractor1: "IBM",
+    Distractor2: "Xerox",
+    Distractor3: "Google",
+    Explanation:
+      "Brendan Eich created JavaScript when he was working at Netscape.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/About_JavaScript"
   },
   {
     Question:
@@ -998,7 +1160,7 @@ const javascriptQuiz = [
     Distractor3: ".isArray()",
     Explanation:
       "The .some() method returns true if at least one of the elements in the array passes the test implemented by the function provided. ",
-    Link: "https://www.freecodecamp.org/news/javascript-array-some-tutorial-how-to-iterate-through-elements-in-an-array/",
+    Link: "https://www.freecodecamp.org/news/javascript-array-some-tutorial-how-to-iterate-through-elements-in-an-array/"
   },
   {
     Question: "In JavaScript, what is the logical NOT operator?",
@@ -1007,18 +1169,18 @@ const javascriptQuiz = [
     Distractor2: "||",
     Distractor3: "%",
     Explanation: "! is the logical NOT operator in JavaScript.",
-    Link: "https://www.freecodecamp.org/news/javascript-logical-operators/",
+    Link: "https://www.freecodecamp.org/news/javascript-logical-operators/"
   },
   {
     Question:
-      "In JavaScript, what is the name of the method used to find elements that match one of more selectors?",
+      "In JavaScript, what is the name of the method used to find elements that match one or more selectors?",
     Answer: ".querySelector()",
     Distractor1: ".textContent()",
     Distractor2: ".padEnd()",
     Distractor3: "Optional chaining",
     Explanation:
-      "The .querySelector() method is used to find elements in the DOM that match one of more selectors.",
-    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/",
+      "The .querySelector() method is used to find elements in the DOM that match one or more selectors.",
+    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/"
   },
   {
     Question:
@@ -1029,7 +1191,7 @@ const javascriptQuiz = [
     Distractor3: "Await",
     Explanation:
       "Hoisting is the process of moving variables, classes, and functions to the top of the scope.",
-    Link: "https://www.freecodecamp.org/news/what-is-hoisting-in-javascript/",
+    Link: "https://www.freecodecamp.org/news/what-is-hoisting-in-javascript/"
   },
   {
     Question: "In JavaScript, what are the three ways to declare a variable?",
@@ -1039,7 +1201,7 @@ const javascriptQuiz = [
     Distractor3: "var, concat, let",
     Explanation:
       "In JavaScript, you can declare variables using var, let or const.",
-    Link: "https://www.freecodecamp.org/news/javascript-interview-prep-cheatsheet/",
+    Link: "https://www.freecodecamp.org/news/javascript-interview-prep-cheatsheet/"
   },
   {
     Question:
@@ -1050,7 +1212,7 @@ const javascriptQuiz = [
     Distractor3: "block",
     Explanation:
       "In JavaScript, you can use let to declare a variable that can only be used in the scope of declaration.",
-    Link: "https://www.freecodecamp.org/news/javascript-variables-beginners-guide/",
+    Link: "https://www.freecodecamp.org/news/javascript-variables-beginners-guide/"
   },
   {
     Question:
@@ -1061,7 +1223,7 @@ const javascriptQuiz = [
     Distractor3: ".every()",
     Explanation:
       "The .join() method joins all of the elements of an array into a string.",
-    Link: "https://devdocs.io/javascript/global_objects/array/join",
+    Link: "https://devdocs.io/javascript/global_objects/array/join"
   },
   {
     Question:
@@ -1072,7 +1234,7 @@ const javascriptQuiz = [
     Distractor3: ".shift()",
     Explanation:
       "The .unshift() method adds the element passed as an argument to the beginning of an array.",
-    Link: "https://www.freecodecamp.org/news/the-javascript-array-handbook/",
+    Link: "https://www.freecodecamp.org/news/the-javascript-array-handbook/"
   },
   {
     Question:
@@ -1083,7 +1245,7 @@ const javascriptQuiz = [
     Distractor3: "upper",
     Explanation:
       "The toUpperCase method is used to convert all of the letters in a string to uppercase.",
-    Link: "https://www.freecodecamp.org/news/javascript-tolowercase-how-to-convert-a-string-to-lowercase-and-uppercase-in-js/",
+    Link: "https://www.freecodecamp.org/news/javascript-tolowercase-how-to-convert-a-string-to-lowercase-and-uppercase-in-js/"
   },
   {
     Question: "In JavaScript, how do you write an inline comment?",
@@ -1092,7 +1254,7 @@ const javascriptQuiz = [
     Distractor2: "# Comment",
     Distractor3: "<!-- Comment -->",
     Explanation: "In JavaScript, an inline comment starts with //",
-    Link: "https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-comment-your-javascript-code/16783",
+    Link: "https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-comment-your-javascript-code/16783"
   },
   {
     Question: "In JavaScript, what does the spread operator do?",
@@ -1105,7 +1267,7 @@ const javascriptQuiz = [
       "It can be used to return an array with an object's properties.",
     Explanation:
       "The spread operator can be used to copy portions of an array or object into another array or object.",
-    Link: "https://www.freecodecamp.org/news/how-to-use-es6-javascript-features-in-react/",
+    Link: "https://www.freecodecamp.org/news/how-to-use-es6-javascript-features-in-react/"
   },
   {
     Question: "What does DOM stand for?",
@@ -1114,7 +1276,7 @@ const javascriptQuiz = [
     Distractor2: "Document Online Model",
     Distractor3: "Document Object Mainframe",
     Explanation: "DOM stands for Document Object Model.",
-    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/",
+    Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/"
   },
   {
     Question:
@@ -1125,7 +1287,7 @@ const javascriptQuiz = [
     Distractor3: "element.style.bgColor = 'red'",
     Explanation:
       "JavaScript syntax is slightly different from CSS syntax. In JavaScript, you use camelCase instead of hyphens.",
-    Link: "https://youtu.be/5fb2aPlgoys?t=704",
+    Link: "https://youtu.be/5fb2aPlgoys?t=704"
   },
   {
     Question:
@@ -1135,8 +1297,38 @@ const javascriptQuiz = [
     Distractor2: "Integer",
     Distractor3: "Boolean",
     Explanation:
-      "In JavaScript, typeof null is an object.This result of typeof null is actually a bug in the language.",
-    Link: "https://www.freecodecamp.org/news/javascript-typeof-how-to-check-the-type-of-a-variable-or-object-in-js/",
+      "In JavaScript, typeof null is an object. This result of typeof null is actually a bug in the language.",
+    Link: "https://www.freecodecamp.org/news/javascript-typeof-how-to-check-the-type-of-a-variable-or-object-in-js/"
+  },
+  {
+    Question: "In JavaScript, what will 'typeof []' return?",
+    Answer: "Object",
+    Distractor1: "Null",
+    Distractor2: "Array",
+    Distractor3: "Undefined",
+    Explanation:
+      "In JavaScript, everything that is not a primitive value is an object.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"
+  },
+  {
+    Question: "In JavaScript, what will 'typeof NaN' return?",
+    Answer: "Number",
+    Distractor1: "ReferenceError",
+    Distractor2: "Null",
+    Distractor3: "NaN",
+    Explanation:
+      "In JavaScript, NaN (not-a-number) is still a numeric data type, but it is undefined as a real number.",
+    Link: "https://www.freecodecamp.org/news/javascript-typeof-how-to-check-the-type-of-a-variable-or-object-in-js/"
+  },
+  {
+    Question: "In JavaScript, what will the following code return: typeof a?",
+    Answer: "undefined",
+    Distractor1: "string",
+    Distractor2: "object",
+    Distractor3: "number",
+    Explanation:
+      "In JavaScript, if you use the typeof operator on an undeclared variable then it will return undefined. ",
+    Link: "https://www.freecodecamp.org/news/javascript-typeof-how-to-check-the-type-of-a-variable-or-object-in-js/"
   },
   {
     Question:
@@ -1147,7 +1339,7 @@ const javascriptQuiz = [
     Distractor3: "var",
     Explanation:
       "typeof is a JavaScript keyword that will return the type of a variable when you call it. You can use this to validate function parameters or check if variables are defined.",
-    Link: "https://www.freecodecamp.org/news/javascript-data-types-typeof-explained/",
+    Link: "https://www.freecodecamp.org/news/javascript-data-types-typeof-explained/"
   },
   {
     Question: "In JavaScript, what is the return value of the .push() method?",
@@ -1157,7 +1349,18 @@ const javascriptQuiz = [
     Distractor3: "Length of the old array, before the element is pushed",
     Explanation:
       ".push() returns the new length of the array, after the element has been pushed",
-    Link: "https://www.freecodecamp.org/news/how-to-insert-an-element-into-an-array-in-javascript/",
+    Link: "https://www.freecodecamp.org/news/how-to-insert-an-element-into-an-array-in-javascript/"
+  },
+  {
+    Question:
+      "In JavaScript, which method allows you to cancel a repeated action created with setInterval()?",
+    Answer: "clearInterval",
+    Distractor1: "clearImmediate",
+    Distractor2: "clearTimeout",
+    Distractor3: "stopInterval",
+    Explanation:
+      "This clearInterval() method is used to stop the timed loop that was started by the setInterval() method.",
+    Link: "https://www.freecodecamp.org/news/javascript-timing-events-settimeout-and-setinterval/"
   },
   {
     Question:
@@ -1168,7 +1371,7 @@ const javascriptQuiz = [
     Distractor3: "const",
     Explanation:
       "JavaScript has three kinds of variable declarations: var, let and const.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types#declarations",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types#declarations"
   },
   {
     Question: "In JavaScript, how many primitive data types are there?",
@@ -1178,7 +1381,17 @@ const javascriptQuiz = [
     Distractor3: "8",
     Explanation:
       "JavaScript has 7 primitive data types. Boolean, null, undefined, Number, BigInt, String and Symbol",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types#data_structures_and_types",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types#data_structures_and_types"
+  },
+  {
+    Question: "In JavaScript, what does NaN means?",
+    Answer: "Not-A-Number",
+    Distractor1: "Near-Me Area Network",
+    Distractor2: "Non-Alpha-Numeric",
+    Distractor3: "Non-numeric",
+    Explanation:
+      "The global NaN property is a value representing Not-A-Number. This property is used to check if a value is not a valid number.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN"
   },
   {
     Question:
@@ -1190,7 +1403,7 @@ const javascriptQuiz = [
     Distractor3: "No, only variables declared with var are hoisted.",
     Explanation:
       "Variables declared with let, const and var are hoisted. But, const and let are in temporal dead zone.",
-    Link: "https://www.freecodecamp.org/news/javascript-temporal-dead-zone-and-hoisting-explained/",
+    Link: "https://www.freecodecamp.org/news/javascript-temporal-dead-zone-and-hoisting-explained/"
   },
   {
     Question: "In JavaScript, what is the difference between == and ===?",
@@ -1202,7 +1415,7 @@ const javascriptQuiz = [
     Distractor3: "There is no difference between == and ===",
     Explanation:
       "The == operator allows for type coercion of the values, while === does not.",
-    Link: "https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/",
+    Link: "https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/"
   },
   {
     Question: "In JavaScript, how many falsy values are there?",
@@ -1212,7 +1425,7 @@ const javascriptQuiz = [
     Distractor3: "8",
     Explanation:
       "There are 6 falsy values in JavaScript: false, 0, '', null, undefined, and NaN.",
-    Link: "https://www.freecodecamp.org/news/falsy-values-in-javascript/",
+    Link: "https://www.freecodecamp.org/news/falsy-values-in-javascript/"
   },
   {
     Question: "In JavaScript, what is a function without a name called?",
@@ -1222,7 +1435,7 @@ const javascriptQuiz = [
     Distractor3: "A nameless function",
     Explanation:
       "A function without a name is called an anonymous function. This is useful when you want to pass a function as an argument to another function.",
-    Link: "https://www.freecodecamp.org/news/what-are-functions-in-javascript-a-beginners-guide/",
+    Link: "https://www.freecodecamp.org/news/what-are-functions-in-javascript-a-beginners-guide/"
   },
   {
     Question: "In JavaScript, what does IIFE stand for?",
@@ -1232,17 +1445,18 @@ const javascriptQuiz = [
     Distractor3: "Internally Invoked Function Executor",
     Explanation:
       "IIFE stands for Immediately Invoked Function Expression. This is a function that is executed immediately after it is created.",
-    Link: "https://www.freecodecamp.org/news/iife-in-javascript-what/",
+    Link: "https://www.freecodecamp.org/news/iife-in-javascript-what/"
   },
   {
-    Question: "Which JavaScript DOM manipulation method adds multiple classes to an element?",
+    Question:
+      "Which JavaScript DOM manipulation method adds multiple classes to an element?",
     Answer: "classList()",
     Distractor1: "className",
     Distractor2: "classVar",
     Distractor3: "classConstructor",
     Explanation:
       "The classList() method adds multiple classes to an element. You can use it to add a class or multiple classes to an element by attaching the add() method to it. For example classList.add('btn'), or classList.add('btn', 'btn-block')",
-    Link: "https://www.freecodecamp.org/news/what-is-dom-in-javascript/#how-to-manipulate-css-from-javascript",
+    Link: "https://www.freecodecamp.org/news/what-is-dom-in-javascript/#how-to-manipulate-css-from-javascript"
   },
   {
     Question:
@@ -1257,7 +1471,7 @@ const javascriptQuiz = [
       "A parameter is the actual value of a variable that gets passed to a function. An argument is the actual value of this variable that gets passed to the function.",
     Explanation:
       "A parameter is a variable in a function definition. An argument is the actual value of this variable that gets passed to the function.",
-    Link: "https://www.freecodecamp.org/news/what-is-the-difference-between-parameters-and-arguments-in-javascript",
+    Link: "https://www.freecodecamp.org/news/what-is-the-difference-between-parameters-and-arguments-in-javascript"
   },
   {
     Question:
@@ -1272,8 +1486,511 @@ const javascriptQuiz = [
       "A function declaration is a function that is defined using a function expression. A function expression is a function that is defined using a function declaration.",
     Explanation:
       "The main difference between a function declaration and a function expression is the function name, which can be omitted in function expressions to create anonymous functions. ",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function"
   },
+  {
+    Question:
+      "In JavaScript, what is the return value for the following code:  [1, 2, 3, 4].shift()?",
+    Answer: "1",
+    Distractor1: "2, 3, 4",
+    Distractor2: "4",
+    Distractor3: "1, 2, 3",
+    Explanation:
+      "The shift() method removes the first element from an array and returns that removed element.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift"
+  },
+  {
+    Question: "In JavaScript, which is a correct way to concatenate 3 arrays?",
+    Answer: "const newArr = arr1.concat(arr2, arr3)",
+    Distractor1: "const newArr = join(arr1, arr2, arr3)",
+    Distractor2: "const newArr = combine[arr1, arr2, arr3]",
+    Distractor3: "const newArr = arr1.join[arr2, arr3]",
+    Explanation:
+      "The concat() method is used to combine two or more arrays and returns a new array.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat"
+  },
+  {
+    Question:
+      "Given the following JavaScript array, ['a', 'b', 'c', 'd', 'e'], what method is used to return ['c', 'd', 'e']?",
+    Answer: "arr.slice(2,5)",
+    Distractor1: "arr.fill(c, d, e)",
+    Distractor2: "arr.keys(c, d, e)",
+    Distractor3: "arr.remove(0, 1)",
+    Explanation:
+      "The slice() method has two optional parameters which represent the starting and ending index for the array. This method returns a new shallow copy of the sliced array.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice"
+  },
+  {
+    Question:
+      "In JavaScript, what is the result for [22, -4, 99, 103, -30, 172].find(x => x > 50)?",
+    Answer: "99",
+    Distractor1: "{99, 103, 172}",
+    Distractor2: "undefined",
+    Distractor3: "[99, 103, 172]",
+    Explanation:
+      "The find() method will look through the array and return the first element that passes the callback function.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find"
+  },
+  {
+    Question:
+      "In JavaScript, what array method takes an integer value and returns the element at that index?",
+    Answer: ".at()",
+    Distractor1: ".value()",
+    Distractor2: ".flat()",
+    Distractor3: ".some()",
+    Explanation:
+      "The at() method takes a positive or negative integer and returns the index for that element.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/at"
+  },
+  {
+    Question: "In JavaScript, what is the runtime model based on?",
+    Answer: "Event Loop",
+    Distractor1: "Stack Memory Allotment Model",
+    Distractor2: "Queue Memory Allotment Model",
+    Distractor3: "Non Blocking Model",
+    Explanation:
+      "The event loop is responsible for executing the code, processing events, and monitoring the callback queue and stack. ",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop"
+  },
+  {
+    Question:
+      "In JavaScript, which one is a type of data structure that stores unique values?",
+    Answer: "Set",
+    Distractor1: "Maps",
+    Distractor2: "Object",
+    Distractor3: "Array",
+    Explanation:
+      "A JavaScript Set is a type of data structure that stores unique values.",
+    Link: "https://www.freecodecamp.org/news/lets-learn-about-set-and-its-unique-functionality-in-javascript-5654c5c03de2/"
+  },
+  {
+    Question: "In JavaScript, what is the optional chaining operator?",
+    Answer: "?.",
+    Distractor1: "??",
+    Distractor2: "&&",
+    Distractor3: "**",
+    Explanation: "?. is the optional chaining operator in JavaScript.",
+    Link: "https://www.freecodecamp.org/news/javascript-optional-chaining/"
+  },
+  {
+    Question:
+      "In JavaScript, what is the result for the following code: ('b' + 'a' + + 'cteri' + 'a').toLowerCase()?",
+    Answer: "banana",
+    Distractor1: "b+a+cteri+a",
+    Distractor2: "bacteria",
+    Distractor3: "Undefined",
+    Explanation:
+      "JavaScript will concatenate all the strings together and attempt to convert 'cteri' to a number using the unary plus operator, and since 'cteri' is not a number, the result will be NaN(Not a Number) which altogether is banana",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus"
+  },
+  {
+    Question: "In JavaScript, which of the following is not an array method?",
+    Answer: ".search()",
+    Distractor1: ".includes()",
+    Distractor2: ".forEach()",
+    Distractor3: ".join()",
+    Explanation:
+      "The search() method searches through the string to find a match to a regular expression. If no match is found, then the return value will be -1.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search"
+  },
+  {
+    Question:
+      "In JavaScript, which method executes a function once the timer expires?",
+    Answer: "setTimeout",
+    Distractor1: "setInterval",
+    Distractor2: "clearInterval",
+    Distractor3: "clearTimeout",
+    Explanation:
+      "The setTimeout() method allows you to execute a piece of code after a certain amount of time has passed.",
+    Link: "https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/"
+  },
+  {
+    Question:
+      "In JavaScript, which one of these console methods displays an array or object of rows and columns?",
+    Answer: "console.table()",
+    Distractor1: "console.assert()",
+    Distractor2: "console.group()",
+    Distractor3: "console.log()",
+    Explanation:
+      "The console.table() method displays an array or object of rows and columns.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/API/console/table"
+  },
+  {
+    Question: "In JavaScript, what type of value is an Array?",
+    Answer: "Object",
+    Distractor1: "Array",
+    Distractor2: "Map",
+    Distractor3: "Set",
+    Explanation:
+      "In JavaScript besides primitives types, we have the Object value type. Arrays are a special type of object that represents a collection of similar types of values.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+  },
+  {
+    Question: "In JavaScript, what type of value is an Array?",
+    Answer: "Object",
+    Distractor1: "Array",
+    Distractor2: "Map",
+    Distractor3: "Set",
+    Explanation:
+      "In JavaScript besides primitives types, we have the Object value type. Arrays are a special type of object that represents a collection of similar types of values.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+  },
+  {
+    Question:
+      "In JavaScript, which of the following methods will return the string representation of a number?",
+    Answer: "toFixed()",
+    Distractor1: "parseFloat()",
+    Distractor2: "valueOf()",
+    Distractor3: "round()",
+    Explanation:
+      "The toFixed() method converts a number to a string and rounds it to a specified number of decimals.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed"
+  },
+  {
+    Question: "In JavaScript, what should be the output of 3 < 2 < 1?",
+    Answer: "true",
+    Distractor1: "false",
+    Distractor2: "syntax error",
+    Distractor3: "NaN",
+    Explanation:
+      "JavaScript will first evaluate 3 < 2 which will return false. Then JavaScript will evaluate false < 1 which will return true because false is converted to the number 0. ",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table"
+  },
+  {
+    Question:
+      "In JavaScript, which operator has the highest precedence among these options?",
+    Answer: "Grouping ()",
+    Distractor1: "Increment ++",
+    Distractor2: "Unary plus +",
+    Distractor3: "Equality ==",
+    Explanation:
+      "On the precedence table, the grouping () operator is the highest with a precedence value of 18",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table"
+  },
+  {
+    Question:
+      "In JavaScript, all objects inherit a built-in property from a ___________________.",
+    Answer: "prototype",
+    Distractor1: "node",
+    Distractor2: "instance variable",
+    Distractor3: "accessor",
+    Explanation:
+      "Prototypes provide the means for JavaScript objects to inherit features from other objects.",
+    Link: "https://www.freecodecamp.org/news/javascript-prototype-explained-with-examples/"
+  },
+  {
+    Question: "In JavaScript, how many threads does code run in?",
+    Answer: "Single thread",
+    Distractor1: "Multiple threads",
+    Distractor2: "No threads",
+    Distractor3: "Can be both single threaded and multi-threaded",
+    Explanation:
+      "JavaScript is a single-threaded language because it has one call stack and memory heap.",
+    Link: "https://www.freecodecamp.org/news/javascript-concurrency-model-and-event-loop/"
+  },
+  {
+    Question: "What does BOM stand for?",
+    Answer: "Browser Object Model",
+    Distractor1: "Boolean Object Manipulation",
+    Distractor2: "Browser Object Manifest",
+    Distractor3: "Backend Object Model",
+    Explanation:
+      "The Browser Object Model is a convention that refers to all objects displayed in the browser.",
+    Link: "https://en.wikipedia.org/wiki/Browser_Object_Model"
+  },
+  {
+    Question:
+      "In JavaScript, which Web API stores and retrieves data from the web browser?",
+    Answer: "localStorage",
+    Distractor1: "Array",
+    Distractor2: "Object",
+    Distractor3: "Class",
+    Explanation:
+      "localStorage is a JavaScript object that stores data as key-value pairs in a web browser with no expiration date.",
+    Link: "https://www.freecodecamp.org/news/how-to-store-data-in-web-browser-storage-localstorage-and-session-storage-explained/"
+  },
+  {
+    Question: "In JavaScript, what does the .seal() method do?",
+    Answer: "Prevents new properties from being added to it.",
+    Distractor1: "Permits its prototype from being reassigned",
+    Distractor2: "Allows its existing properties to be removed",
+    Distractor3: "Prevents its existing value from being modified",
+    Explanation:
+      "JavaScript's Object.seal() method prevents the addition of new properties, removal of existing properties or the reassignment of its prototype.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal"
+  },
+  {
+    Question:
+      "In JavaScript, which of the following Math objects rounds a number down to the nearest whole integer?",
+    Answer: "Math.floor()",
+    Distractor1: "Math.ceil()",
+    Distractor2: "Math.round()",
+    Distractor3: "Math.abs()",
+    Explanation:
+      "Math.floor() is a JavaScript method that rounds a number down to the nearest whole number or integer.",
+    Link: "https://www.freecodecamp.org/news/math-in-javascript/"
+  },
+  {
+    Question:
+      "In JavaScript, what is it called when an event is triggered on a target element and subsequent parent elements?",
+    Answer: "Event bubbling",
+    Distractor1: "Event propagation",
+    Distractor2: "Event capturing",
+    Distractor3: "Event handling",
+    Explanation:
+      "Event bubbling is an event propagation method that starts with the element that triggered the event and then bubbles up to its parent elements in their respective hierarchy.",
+    Link: "https://www.freecodecamp.org/news/event-propagation-event-bubbling-event-catching-beginners-guide/"
+  },
+  {
+    Question: "In JavaScript, what is the nullish coalescing operator?",
+    Answer: "??",
+    Distractor1: "?.",
+    Distractor2: "&&",
+    Distractor3: "**",
+    Explanation:
+      "?? is the optional nullish coalescing in JavaScript. It returns the first operand if it is not null or undefined. Otherwise, it returns the second operand.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator"
+  },
+  {
+    Question:
+      "In JavaScript, which one gets higher precedence among 'setTimeout' and 'Promise' (considering zero delay)?",
+    Answer: "Promise",
+    Distractor1: "setTimeout",
+    Distractor2: "Depends on the order of calling",
+    Distractor3: "Unpredictable",
+    Explanation:
+      "Promises will always have a higher precedence than setTimeout. The Promise will be executed before the setTimeout, regardless of the order in which they are called.",
+    Link: "https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascript/"
+  },
+  {
+    Question: "In JavaScript, what is the result for typeof NaN?",
+    Answer: "number",
+    Distractor1: "Object",
+    Distractor2: "String",
+    Distractor3: "Undefined ",
+    Explanation:
+      "typeof NaN will return number because NaN is a property of the Number object in JavaScript",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN"
+  },
+  {
+    Question:
+      "In JavaScript, which array method returns a new iterable iterator object?",
+    Answer: "values()",
+    Distractor1: "concat()",
+    Distractor2: "entries()",
+    Distractor3: "sort()",
+    Explanation:
+      "The array.values() method returns a new array iterator. To access each element in that new array iterator, you can use a for...of loop.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values"
+  },
+  {
+    Question:
+      "What is the name for the primary entry point for all client-side JavaScript features and APIs?",
+    Answer: "Window",
+    Distractor1: "Split",
+    Distractor2: "Reduce",
+    Distractor3: "Gate",
+    Explanation:
+      "The Window object provides access to all JavaScript capabilities and APIs that are used on the client side.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/API/Window"
+  },
+  {
+    Question:
+      "In JavaScript, which of the following functions accepts an image element and a file as arguments?",
+    Answer: "FileUpLoad",
+    Distractor1: "DownFile",
+    Distractor2: "Client",
+    Distractor3: "Database",
+    Explanation:
+      "An HTML <input> element with the type='file' attribute is represented by the Input FileUpload object and is a client-side JavaScript object.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/API/File_API/Using_files_from_web_applications"
+  },
+  {
+    Question:
+      "In JavaScript, which methods accept an iterable of promises and returns a single array of results?",
+    Answer: "Promise.all() and Promise.allSettled()",
+    Distractor1: "Promise.any() and Promise.all()",
+    Distractor2: "Promise.resolve() and Promise.allSettled()",
+    Distractor3: "Promise.reject() and Promise.reject()",
+    Explanation:
+      "Promise.all() and Promise.allSettled() accept an iterable of promises and return a single array of results.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+  },
+  {
+    Question:
+      "In JavaScript, what will be the return value of console.log(new String('Hello, world!') === 'Hello, world!')?",
+    Answer: "false",
+    Distractor1: "equal",
+    Distractor2: "not equal",
+    Distractor3: "true",
+    Explanation:
+      "The answer is false. Triple equal ('===') compares the value and the type as well.",
+    Link: "https://youtu.be/zJSY8tbf_ys?t=24429"
+  },
+  {
+    Question:
+      "In JavaScript, which keyword is used to make portions of code accessible to other modules?",
+    Answer: "export",
+    Distractor1: "import",
+    Distractor2: "as",
+    Distractor3: "from",
+    Explanation:
+      "The export keyword is used to make it possible to access small portions of code in other modules.",
+    Link: "https://www.freecodecamp.org/news/javascript-modules-explained-with-examples/#"
+  },
+  {
+    Question:
+      "Which of the following options is a web API that runs code asynchronously in JavaScript?",
+    Answer: "setTimeOut()",
+    Distractor1: "repeat()",
+    Distractor2: "timeOut()",
+    Distractor3: "delay()",
+    Explanation:
+      "The setTimeout() function is an asynchronous function that will not pause execution of other functions in the stack.",
+    Link: "https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/"
+  },
+  {
+    Question:
+      "In JavaScript, what is the result of the following code: console.log(7 + '5')?",
+    Answer: "75",
+    Distractor1: "11",
+    Distractor2: "57",
+    Distractor3: "undefined",
+    Explanation:
+      "The result for console.log(7 + '5') is 75 because the + operator is used to concatenate strings.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition"
+  },
+  {
+    Question:
+      "In JavaScript, what is the result of the following code: console.log(7 - '5')?",
+    Answer: "2",
+    Distractor1: "12",
+    Distractor2: "undefined",
+    Distractor3: "NaN",
+    Explanation:
+      "The result is 2 because in JavaScript you can't use the - operator on strings so it will automatically convert the strings to numbers and subtract the two values.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction#subtraction_with_non-numbers"
+  },
+  {
+    Question:
+      "In JavaScript, the ___________ method returns the index position of the last occurrence of a value in an array.",
+    Answer: "lastIndexOf()",
+    Distractor1: "indexOf()",
+    Distractor2: "charAt(0)",
+    Distractor3: "getPosition()",
+    Explanation:
+      "The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"
+  },
+  {
+    Question:
+      "In JavaScript, which of the following is not a primitive data type?",
+    Answer: "Object",
+    Distractor1: "Number",
+    Distractor2: "String",
+    Distractor3: "Undefined",
+    Explanation:
+      "JavaScript has 7 primitive data types. Boolean, null, undefined, Number, BigInt, String and Symbol",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types#data_structures_and_types"
+  },
+  {
+    Question:
+      "In JavaScript, how many ways can you access an object's properties?",
+    Answer: "2",
+    Distractor1: "1",
+    Distractor2: "8",
+    Distractor3: "13",
+    Explanation:
+      "To access data from an object in JavaScript, you can use either dot notation or bracket notation.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors"
+  },
+  {
+    Question:
+      "In JavaScript, what is the classification for a 'function' and 'class'?",
+    Answer: "Declaration statements",
+    Distractor1: "Keywords",
+    Distractor2: "Data types",
+    Distractor3: "Variables",
+    Explanation:
+      "Both 'function' and 'class' are used in the beginning to declare a function and class respectively.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements"
+  },
+  {
+    Question:
+      "In JavaScript, which of the following is NOT a composite data type?",
+    Answer: "String",
+    Distractor1: "Array",
+    Distractor2: "Class",
+    Distractor3: "Object",
+    Explanation:
+      "In JavaScript, a composite data type is defined as not being an object as well as having no properties or methods.",
+    Link: "https://developer.mozilla.org/en-US/docs/Glossary/Primitive"
+  },
+  {
+    Question:
+      "In JavaScript, what is the result for the following code: console.log(true + 34)?",
+    Answer: "35",
+    Distractor1: "34",
+    Distractor2: "true34",
+    Distractor3: "true",
+    Explanation:
+      "Since true is converted to the number 1, then true + 34 would result in 35.",
+    Link: "https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion"
+  },
+  {
+    Question:
+      "In JavaScript, how many parameters does the forEach() method take?",
+    Answer: "3",
+    Distractor1: "1",
+    Distractor2: "2",
+    Distractor3: "4",
+    Explanation:
+      "The forEach() method takes 3 parameters: the current value, the index, and the array.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+  },
+  {
+    Question:
+      "In JavaScript, how many parameters does the reduce() method take?",
+    Answer: "4",
+    Distractor1: "1",
+    Distractor2: "2",
+    Distractor3: "3",
+    Explanation:
+      "The reduce() method takes 4 parameters: the accumulator, the current value, the index, and the array.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce"
+  },
+  {
+    Question:
+      "In JavaScript, which array method returns true if ALL values pass a condition?",
+    Answer: "every()",
+    Distractor1: "some()",
+    Distractor2: "filter()",
+    Distractor3: "find()",
+    Explanation:
+      "The every() method returns true if all values in the array pass a condition and false if any value fails the condition.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"
+  },
+  {
+    Question: "In JavaScript, what does the forEach() method return?",
+    Answer: "undefined",
+    Distractor1: "true",
+    Distractor2: "false",
+    Distractor3: "null",
+    Explanation:
+      "forEach() always returns undefined. It makes no difference whether the return keyword is used or not.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+  },
+  {
+    Question:
+      "In JavaScript, what is the name for a variable that can be changed?",
+    Answer: "Mutable Variable",
+    Distractor1: "Volatile Variable",
+    Distractor2: "Dynamic Variable",
+    Distractor3: "Fluid Variable",
+    Explanation:
+      "Variables that can have their values changed are referred to as Mutable Variables. Only objects and arrays are changeable in JavaScript; primitive values are not.",
+    Link: "https://developer.mozilla.org/en-US/docs/Glossary/Mutable"
+  }
 ];
 
 export default javascriptQuiz;
